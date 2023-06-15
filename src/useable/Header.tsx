@@ -37,9 +37,11 @@ export const Header = () => {
                             height={300}
                             className='w-[60px]  h-[60px] object-contain rounded-full '
                         />
+                        <Link href="/">
                         <h2 className="scroll-m-20  sm:flex-shrink-0 md:flex-shrink  text-2xl font-semibold tracking-tight transition-colors first:mt-0">
                             Dine Market
                         </h2>
+                        </Link>
                         <FaBars
                             // className='sm:relative left-[400px] md:hidden mr-9'
                             className='ml-auto md:hidden'
