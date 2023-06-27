@@ -13,22 +13,22 @@ const Produt = ({ params }: { params: productType }) => {
   let data = ProductData();
   const modifier = params.produt.replace(/-/g, " ");
 
-    // const ProductObj=data.find((ele)=> (ele.name===modifier) ? ele : null);
-    const ProductObj = data.find((ele) => (ele.name === modifier)) || { img: "", name: "", price: "",productDetails:"",productCare:[] ,picks:""};
-    // console.log(ProductObj);
-const { name, price, img ,productDetails,productCare,picks}: { img: string, name: string, price: string,productDetails:string,productCare:string[],picks:string } = ProductObj;
+  // const ProductObj=data.find((ele)=> (ele.name===modifier) ? ele : null);
+  const ProductObj = data.find((ele) => (ele.name === modifier)) || { img: "", name: "", price: "", productDetails: "", productCare: [], picks: "" };
+  // console.log(ProductObj);
+  const { name, price, img, productDetails, productCare, picks }: { img: string, name: string, price: string, productDetails: string, productCare: string[], picks: string } = ProductObj;
 
-    // const {name ,price, img}:{img:(string|undefined),name:string,price:string}=ProductObj;
-    
-    // useEffect(()=>{
-      
+  // const {name ,price, img}:{img:(string|undefined),name:string,price:string}=ProductObj;
 
-      
+  // useEffect(()=>{
 
 
-    // },[])
 
-;
+
+
+  // },[])
+
+  ;
 
   // console.log(modifier);
   // let imgdata:number=0;
@@ -50,9 +50,9 @@ const { name, price, img ,productDetails,productCare,picks}: { img: string, name
   // }
   return (
     <div>
-               <ProductDetails  img={img} name={name} price={price} productDetails={productDetails} productCare={productCare} picks={picks}/>
-               {/* <Product img={img}  name={name}  price ={price}/>       */}
-              
+      <ProductDetails img={img} name={name} price={price} productDetails={productDetails} productCare={productCare} picks={picks} />
+      {/* <Product img={img}  name={name}  price ={price}/>       */}
+
     </div>
   )
 }
